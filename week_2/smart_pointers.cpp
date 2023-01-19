@@ -34,6 +34,7 @@ void array_pointer()
         pointerArray[i].act();
     }
 
+    //Destructors
 }
 
 void move_fun()
@@ -72,8 +73,8 @@ void copy_example_2()
 
 int main()
 {
-    smart_pointer();
-//    array_pointer();
+//    smart_pointer();
+    array_pointer();
 //    move_fun();
 //    copy_example();
 //    copy_example_2();
