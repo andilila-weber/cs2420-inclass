@@ -66,17 +66,17 @@ void copy_example_2()
     auto second = first;
     auto third = first->deep_copy();
     second->set_message("Second");
-    first->show();
-    second->show();
-    third->show();
+    first->show(); // Second
+    second->show(); // Second
+    third->show(); // One
 }
 
 int main()
 {
 //    smart_pointer();
-    array_pointer();
+//    array_pointer();
 //    move_fun();
 //    copy_example();
-//    copy_example_2();
+    copy_example_2();
     return 0;
 }
