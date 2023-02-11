@@ -13,7 +13,7 @@ class StaticStack
     public:
         //Constructor
         StaticStack(int m){
-            max = m;
+            max = m;//size
             top = -1;
             array = new Type[this->max];
         }
