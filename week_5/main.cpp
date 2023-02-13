@@ -5,6 +5,7 @@
 #include "static_queue.h"
 #include "stack.h"
 #include "queue.h"
+#include "node.h"
 
 void main_static_stack()
 {
@@ -60,6 +61,17 @@ void main_static_queue()
     cout<<"Queue: "<<q<<endl;
 }
 
+void print_recur(Node<int>* S)
+{
+    if(S == nullptr)
+        cout<<" "<<endl;
+    else
+    {
+        cout<<S->value<<" ";
+        print_recur( S->next );
+    }
+}
+
 void main_stack()
 {
     MyStack<int> s;
@@ -73,6 +85,8 @@ void main_stack()
     s.push(6);
 
     cout<<"Stack: "<<s<<endl;
+    cout<<"Recursive Stack: "<<endl;
+    print_recur( s.get_top() );
 
     s.pop();
     s.pop();
@@ -115,9 +129,9 @@ void main_queue()
 
 int main(void)
 {
-    main_static_stack();
+//    main_static_stack();
 //    main_static_queue();
-//    main_stack();
+    main_stack();
 //    main_queue();
 
     return 0;

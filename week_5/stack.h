@@ -17,6 +17,11 @@ class MyStack
             cnt = 0;
         }
 
+        Node<Type>* get_top()
+        {
+            return this->top;
+        }
+
         //Destructor if using raw pointers
         ~MyStack(){
             clear();
