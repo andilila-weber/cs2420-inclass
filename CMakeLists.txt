@@ -18,5 +18,8 @@ set(CMAKE_CXX_STANDARD 14)
 ## Week 5
 #add_executable(main week_5/main.cpp)
 
-# Week 6
-add_executable(main week_6/main.cpp)
+## Week 6
+#add_executable(main week_6/main.cpp)
+
+# Week 10
+add_executable(main week_10/main.cpp)
