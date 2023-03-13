@@ -129,7 +129,7 @@ class MyTree
                             node->value = rmn->value; // update node to eliminate
                             temp = rmn;
                             if(flag == true)
-                                parent_rmn->right =  rmn->left;
+                                parent_rmn->right =  rmn->left; // rmn has no right
                             else
                                 node->left = rmn->left;
                         }
