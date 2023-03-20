@@ -93,9 +93,37 @@ void main_tree()
     T.print();
 }
 
+void main_swap()
+{
+    MyTree<int> T;
+    cout<<"Empty: "<<T.is_empty()<<endl;
+
+    // Example 3: for remove
+    T.insert(15);
+    T.insert(20);
+    T.insert(17);
+    T.insert(8);
+    T.insert(5);
+    T.insert(13);
+    T.insert(11);
+    T.insert(14);
+
+    cout<<"Tree: "<<endl;
+    T.print();
+    cout<<endl<<endl;
+
+    T.swap();
+
+    cout<<"New Tree: "<<endl;
+    T.print();
+    cout<<endl<<endl;
+
+}
+
 
 int main(void)
 {
-    main_tree();
+//    main_tree();
+    main_swap();
     return 0;
 }

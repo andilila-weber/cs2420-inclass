@@ -241,4 +241,21 @@ class MyTree
         {
             return( this->root == nullptr);
         }
+
+        void swap()
+        {
+            swap(this->root);
+        }
+
+        void swap(TreeNode<Type>* node)
+        {
+            if(node != nullptr)
+            {
+                auto temp = node->right;
+                node->right = node->left;
+                node->left = temp;
+                swap(node->left);
+                swap(node->right);
+            }
+        }
 };
