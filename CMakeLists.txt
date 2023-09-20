@@ -25,4 +25,4 @@ set(CMAKE_CXX_STANDARD 14)
 #add_executable(main week_10/main.cpp)
 
 # Week 12
-add_executable(main week_12/main.cpp)
+add_executable(main week_12/main.cpp week_3/exercise3_week4.h)

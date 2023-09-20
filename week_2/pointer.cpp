@@ -81,7 +81,7 @@ int main()
 {
 //    pointer_address();
 //    deref_pointers();
-//    pointer_change_value();
+  pointer_change_value();
 //    passing_variables();
     pointers2objects();
     return 0;
